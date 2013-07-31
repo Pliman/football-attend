@@ -1,0 +1,33 @@
+{
+	"name": "photo-gallery",
+	"version": "0.0.3",
+	"private": true,
+	"scripts": {
+		"start": "node app.js"
+	},
+	"dependencies": {
+		"express": "3.2.6",
+		"jade": "0.31.2",
+		"exif": "0.3.3",
+		"generic-pool": "2.0.2",
+		"log4js": "0.5.1",
+		"mongodb": "1.2.14",
+		"node-uuid": "1.4.0",
+		"underscore": "1.4.4"
+	},
+	"author": {
+		"name": "Pliman",
+		"email": "sunbin235@163.com"
+	},
+	"contributors": [
+		{
+			"name": "Pliman",
+			"email": "sunbin235@163.com"
+		}
+	],
+	"repository" : {
+		"type" : "git",
+		"url" : "https://github.com/Pliman/photo-gallery.git"
+	},
+	"main" : "app"
+}

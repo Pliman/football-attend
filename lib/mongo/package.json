@@ -1,0 +1,9 @@
+{
+  "name": "mongoDB wrapper",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "mysql": "1.2.14"
+  },
+  "main" : "mongo"
+}

@@ -1,0 +1,236 @@
+/*-----------------global start-----------------*/
+body {
+	font-family: "georgia", "Lato", "sans-serif", "Microsoft YaHei";
+	font-size: 15px;
+	background: url("../img/qc1920.jpg") no-repeat left top;
+}
+
+.mw-760 {
+	min-width: 760px;
+}
+
+.mw-1860 {
+	min-width: 1860px;
+}
+
+.navbar .nav > li > a {
+	font-size: 17px;
+}
+
+.content {
+	min-height: 800px;
+}
+/*-----------------global end-----------------*/
+/*-----------------header start-----------------*/
+.header .navbar-inner{
+	background: url("../img/football-banner.png") no-repeat left top;
+	height: 200px;
+}
+
+.navbar{
+	margin-bottom: 0;
+}
+
+.navbar .siteTitle {
+	text-decoration: none;
+}
+
+/*-----------------header end-----------------*/
+/*-----------------choose user start-----------------*/
+.user-name {
+	font-size: 24px;
+	text-align: center;
+	font-weight: 700;
+	text-decoration: none;
+	cursor: pointer;
+	min-height: 60px;
+	line-height: 60px;
+	color: #ECF0F1;
+}
+
+/*-----------------choose end-----------------*/
+/*-----------------vote start-----------------*/
+.greeting {
+	font-size: 22px;
+	font-weight: 700;
+}
+
+.chooser {
+	line-height: 24px;
+	color: #ECF0F1;
+}
+
+.voter div {
+	line-height: 23px;
+}
+
+.voter .title {
+	color: #ECF0F1;
+	font-size: 24px;
+	font-weight: 700;
+	padding-left: 50px;
+	text-transform: capitalize;
+}
+
+.voter label {
+	float: left;
+	margin-left: 30px;
+}
+
+.voter .day {
+	height: 60px;
+	line-height: 60px;
+	padding-top: 30px;
+}
+
+/*
+.voter .monday {
+	background-color: #E74C3C;
+}
+
+.voter .tuesday {
+	background-color: #E67E22;
+}
+
+.voter .wednesday {
+	background-color: #F1C40F;
+}
+
+.voter .thursday {
+	background-color: #2ECC71;
+}
+
+.voter .friday {
+	background-color: #1ABC9C;
+}
+
+.voter .saturday {
+	background-color: #3498DB;
+}
+
+.voter .sunday {
+	background-color: #9B59B6;
+}
+*/
+
+.voter .attendee {
+	float: left;
+	margin-top: -25px;
+	margin-left: 10px;
+	height: 70px;
+	width: 200px;
+}
+
+.voter .getInCar {
+	float: left;
+	margin-top: -25px;
+	margin-left: 10px;
+	height: 70px;
+	width: 260px;
+}
+
+.voter .getInCar .operater {
+	border-radius: 5px;
+}
+
+.voter .getInCar .operater a{
+	margin: 0 2px;
+	padding: 2px;
+}
+
+.voter .getInCar .passenger {
+	border-radius: 5px;
+}
+/*-----------------vote end-----------------*/
+
+/******************style for components******************/
+
+/*-----------------checkbox start-----------------*/
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+	position: absolute;
+	left: -9999px;
+}
+
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+	position: relative;
+	padding-left: 75px;
+	cursor: pointer;
+}
+
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before,
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+	content: '';
+	position: absolute;
+}
+
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+	left: 0;
+	top: -3px;
+	width: 65px;
+	height: 30px;
+	background: #DDDDDD;
+	border-radius: 15px;
+	transition: background-color .2s;
+}
+
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+	width: 20px;
+	height: 20px;
+	transition: all .2s;
+	border-radius: 50%;
+	background: #7F8C9A;
+	top: 2px;
+	left: 5px;
+}
+
+/* on checked */
+[type="checkbox"]:checked + label:before {
+	background: #34495E;
+}
+
+[type="checkbox"]:checked + label:after {
+	background: #39D2B4;
+	top: 2px;
+	left: 40px;
+}
+
+[type="checkbox"]:checked + label .ui,
+[type="checkbox"]:not(:checked) + label .ui:before,
+[type="checkbox"]:checked + label .ui:after {
+	position: absolute;
+	left: 6px;
+	width: 65px;
+	border-radius: 15px;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 22px;
+	transition: all .2s;
+}
+
+[type="checkbox"]:not(:checked) + label .ui:before {
+	font-family: "Flat-UI-Icons";
+	content: "\e00b";
+	left: 32px;
+	line-height: 23px;
+}
+
+[type="checkbox"]:checked + label .ui:after {
+	font-family: "Flat-UI-Icons";
+	content: "\e00a";
+	color: #39D2B4;
+	line-height: 23px;
+}
+
+[type="checkbox"]:focus + label:before {
+	border: 1px dashed #777;
+	box-sizing: border-box;
+	margin-top: -1px;
+}
+
+/*-----------------checkbox end-----------------*/
