@@ -82,6 +82,10 @@ body {
 	height: 60px;
 	line-height: 60px;
 	padding-top: 30px;
+	background-color: rgba(149, 165, 166, 0.4);
+	border: 1px solid #BDC3C7;
+	border-radius: 5px;
+	margin-bottom: 3px;
 }
 
 /*
