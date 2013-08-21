@@ -20,8 +20,12 @@
 
 				<div id="{{weekday.name}}AttendeesAndCars" class="span7">
 					<div id="{{weekday.name}}Attendees"
-					     class="tagsinput attendee">
-						{{weekdaysStatistic[weekday.name].attendees.join(",")}}
+					     class="tagsinput attendee"
+					     ng-switch="weekdaysStatistic[weekday.name].attendees.length == 0">
+						<span ng-switch-when="false">
+							共{{weekdaysStatistic[weekday.name].attendees.length}}人：{{weekdaysStatistic[weekday.name].attendees.join(",")}}
+						</span>
+						<span ng-switch-when="true">木有人</span>
 					</div>
 
 					<div ng-repeat="car in weekdaysStatistic[weekday.name].cars"

@@ -27,7 +27,6 @@ define(['jQuery', 'underscore', 'angular', 'popMsger', 'angularUiRouter', './ser
 					delete($scope.currentUserAttend[day]);
 					$scope.currentUserDay.available = _.without($scope.currentUserDay.available, day);
 					$scope.weekdaysStatistic[day].attendees = _.without($scope.weekdaysStatistic[day].attendees, currentUserName);
-					$('#' + day + "Attendees").text($scope.weekdaysStatistic[day].attendees.join(","));
 
 					notDriveCar(day);
 				};
@@ -35,7 +34,6 @@ define(['jQuery', 'underscore', 'angular', 'popMsger', 'angularUiRouter', './ser
 				var attendDay = function (day) {
 					$scope.currentUserAttend[day] = day;
 					$scope.weekdaysStatistic[day].attendees.push(currentUserName);
-					$('#' + day + "Attendees").text($scope.weekdaysStatistic[day].attendees.join(","));
 
 					$scope.currentUserDay.available.push(day);
 				};
