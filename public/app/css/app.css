@@ -2,7 +2,7 @@
 body {
 	font-family: "georgia", "Lato", "sans-serif", "Microsoft YaHei";
 	font-size: 15px;
-	background: url("../img/qc1920.jpg") no-repeat left top;
+	background: url("../img/dark_bg.jpg") no-repeat left top;
 }
 
 .mw-760 {
@@ -10,7 +10,7 @@ body {
 }
 
 .mw-1860 {
-	min-width: 1860px;
+	min-width: 2650px;
 }
 
 .navbar .nav > li > a {
@@ -23,7 +23,7 @@ body {
 /*-----------------global end-----------------*/
 /*-----------------header start-----------------*/
 .header .navbar-inner{
-	background: url("../img/football-banner.png") no-repeat left top;
+	background: url("../img/football-banner.1png") no-repeat left top;
 	height: 200px;
 }
 

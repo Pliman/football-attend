@@ -4,8 +4,8 @@
 		<fieldset class="voter">
 			<div ng-repeat="weekday in weekdays"
 			     class="row-fluid day {{weekday.name}} clearfix">
-				<div class="span2 title">{{weekday.chinese}}</div>
-				<div class="span3">
+				<div class="span1 title">{{weekday.chinese}}</div>
+				<div class="span2">
 					<input type="checkbox" id="{{weekday.name}}Go"
 					       ng-checked="currentUserAttend[weekday.name]"
 					       ng-click="checkGo(weekday.name)"/><label
@@ -18,7 +18,7 @@
 							class="ui"></span>我开勒个车</label>
 				</div>
 
-				<div id="{{weekday.name}}AttendeesAndCars" class="span7">
+				<div id="{{weekday.name}}AttendeesAndCars" class="span9">
 					<div id="{{weekday.name}}Attendees"
 					     class="tagsinput attendee"
 					     ng-switch="weekdaysStatistic[weekday.name].attendees.length == 0">
