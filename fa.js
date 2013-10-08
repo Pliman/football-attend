@@ -9,8 +9,9 @@ var logger = require("./lib/log").getLogger('app');
 
 var app = express();
 
+var port = process.env.PORT || 51998;
 // all environments
-app.set('port', process.env.PORT || 998);
+app.set('port', port);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 //app.use(express.favicon());
@@ -53,6 +54,6 @@ if ('development' == app.get('env')) {
 var dispatcher = require("./dispatcher");
 dispatcher.dispatch(app);
 
-http.createServer(app).listen(process.env.PORT || 998, function() {
-	console.log("attendee listening on port %d in %s mode", process.env.PORT || 998, app.settings.env);
+http.createServer(app).listen(port, function() {
+	console.log("attendee listening on port %d in %s mode", port, app.settings.env);
 });
